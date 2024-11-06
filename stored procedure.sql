@@ -9,9 +9,9 @@ CREATE PROCEDURE spEmployeeSelect
 )
 BEGIN
 	SELECT * 
-    FROM Employee e
-    WHERE e.EmpID = IFNULL(EmpID, e.EmpID)
-    AND e.LastName = IFNULL(LastName, e.lastname);
+	FROM Employee e
+	WHERE e.EmpID = IFNULL(EmpID, e.EmpID)
+	AND e.LastName = IFNULL(LastName, e.lastname);
 END
 $$
 
